@@ -17,7 +17,7 @@ Hass.io running on Raspberry Pi3B+. </br>
 #### iOS Companion App 📱
 Check out home-assistant.io iOS app on <a href="https://apps.apple.com/us/app/home-assistant-companion/id1099568401">iTunes store</a>.
 (btw big thanks to <a href="https://github.com/robbiet480">Robert Trencheny</a>) 
-![HA on iOS Mobile App](https://niccolobusato.it/Github/Images/HA-Master/1m.png)
+![HA on iOS Mobile App](https://niccolobusato.it/Github/Images/HA-Parents/mobile-view1.png)
 
 <hr>
 
