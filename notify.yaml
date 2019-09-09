@@ -1,0 +1,9 @@
+  - name: telegram_niccolo
+    platform: telegram
+    chat_id: !secret telegram_chat_id1
+  - name: telegram_gp
+    platform: telegram
+    chat_id: !secret telegram_chat_id2
+  - name: canale
+    platform: telegram
+    chat_id: !secret telegram_chat_id3

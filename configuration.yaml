@@ -1,0 +1,69 @@
+homeassistant:
+# Customization file
+  customize: !include customize.yaml
+# Enable the "".sh" files in Node-RED
+  whitelist_external_dirs:
+    - /config/www/notte/
+# Integrations
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+binary_sensor: !include binary_sensor.yaml
+recorder: !include recorder.yaml
+device_tracker: !include device_tracker.yaml
+notify: !include notify.yaml
+telegram_bot: !include telegram_bot.yaml
+http: !include http.yaml
+
+# Enables the frontend
+frontend:
+  themes: !include themes.yaml
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+# Discover some devices automatically
+discovery:
+# Folder Watcher
+folder_watcher:
+  - folder: /config/www/notte/prep
+
+
+# MQTT
+mqtt:
+  broker: core-mosquitto
+  port: 1883
+  username: !secret mqtt_admin
+  password: !secret mqtt_psw
+
+# ffmpeg
+ffmpeg:
+# Camera
+camera:
+  - platform: ffmpeg
+    input: 'rtsp://192.168.1.121:554/11'
+    name: Giardino Cancello
+  - platform: ffmpeg
+    input: 'rtsp://192.168.1.123:554/onvif1'
+    name: Laboratorio
+    extra_arguments: -vf "transpose=1"
+### onvif comands (telecamere "null")    
+  - platform: onvif
+    host: 192.168.1.123
+    username: !secret onvif_usr
+    password: !secret onvif_psw
+    name: test tilt
+####### per riconoscimento facciale / umano o non
+  - platform: generic
+    still_image_url: !secret generic_url_1
+  - platform: generic
+    still_image_url: !secret generic_url_2
+  - platform: generic
+    still_image_url: !secret generic_url_3
+    name: Gif1
+
+
+hacs:
+  token: !secret hacs_token
+
+##############
+##############
+##############

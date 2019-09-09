@@ -1,0 +1,44 @@
+    #ping
+    - platform: ping
+      host: 192.168.1.103
+    # mqtt
+    - platform: mqtt
+      state_topic: "tele/sonoff/RESULT"
+      name: 'ANGOLO PORTA ALBERO RETRO'
+      value_template: '{{value_json.RfReceived.Data}}'
+      payload_on: '9ECDA0'
+      payload_off: '9ECDA1'
+      device_class: motion
+      qos: 1
+    - platform: mqtt
+      state_topic: "tele/sonoff/RESULT"
+      name: 'PORTONE LAB'
+      value_template: '{{value_json.RfReceived.Data}}'
+      payload_on: '1B6F99'
+      payload_off: '2B6F99'
+      device_class: motion
+      qos: 1
+    - platform: mqtt
+      state_topic: "tele/sonoff/RESULT"
+      name: 'PORTA UFFICO'
+      value_template: '{{value_json.RfReceived.Data}}'
+      payload_on: 'BCEDA0'
+      payload_off: 'BCEDA1'
+      device_class: motion
+      qos: 1
+    - platform: mqtt
+      state_topic: "tele/sonoff/RESULT"
+      name: 'non def'
+      value_template: '{{value_json.RfReceived.Data}}'
+      payload_on: '5BD6B9'
+      payload_off: '5BD6B0'
+      device_class: motion
+      qos: 1
+    - platform: mqtt
+      state_topic: "tele/sonoff/RESULT"
+      name: 'sensore porta ufficio'
+      value_template: '{{value_json.RfReceived.Data}}'
+      payload_on: '94538A'
+      payload_off: '94538B'
+      device_class: door
+      qos: 1

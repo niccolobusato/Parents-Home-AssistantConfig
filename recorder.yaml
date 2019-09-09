@@ -1,0 +1,12 @@
+  exclude:
+    domains:
+      - switch
+      - media_player
+      - camera
+      - binary_sensor
+      - sensor
+      - script
+      - automation
+      - person
+      - sun
+      - updater

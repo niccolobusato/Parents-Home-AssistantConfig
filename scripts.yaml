@@ -1,0 +1,24 @@
+ptz_tilt_up:
+  sequence:
+  - service: camera.onvif_ptz
+    data:
+      entity_id: camera.test_tilt
+      tilt: UP
+ptz_tilt_down:
+  sequence:
+  - service: camera.onvif_ptz
+    data:
+      entity_id: camera.test_tilt
+      tilt: DOWN
+ptz_pan_left:
+  sequence:
+  - service: camera.onvif_ptz
+    data:
+      entity_id: camera.test_tilt
+      pan: LEFT
+ptz_pan_right:
+  sequence:
+  - service: camera.onvif_ptz
+    data:
+      entity_id: camera.test_tilt
+      pan: RIGHT
