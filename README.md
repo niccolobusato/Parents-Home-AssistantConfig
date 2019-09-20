@@ -7,11 +7,11 @@ Hass.io running on Raspberry Pi3B+. </br>
 
 💻
 ### Security Tab
-![HA Security Tab](https://niccolobusato.it/Github/Images/HA-Parents/5.png)
+![HA Security Tab](https://niccolobusato.it/Github/Images/HA-Parents/5b.png)
 ### Management Tab
-![HA Management Tab](https://niccolobusato.it/Github/Images/HA-Parents/3.png)
+![HA Management Tab](https://niccolobusato.it/Github/Images/HA-Parents/3b.png)
 ### Last Trigger Tab
-![HA Last Trigger Tab](https://niccolobusato.it/Github/Images/HA-Parents/1.png)
+![HA Last Trigger Tab](https://niccolobusato.it/Github/Images/HA-Parents/1b.png)
 
 ## Main View On Mobile
 #### iOS Companion App 📱
